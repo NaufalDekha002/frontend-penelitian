@@ -1,0 +1,1 @@
+export let urlAPI = "https://penelitian-tugas.herokuapp.com/semua";
