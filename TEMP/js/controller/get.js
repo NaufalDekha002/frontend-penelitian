@@ -7,11 +7,9 @@ export function isiTablePresensi(results) {
 function isiRow(value) {
     let content =
         isiTabel.replace("#NAMA#", value.biodata.nama)
-            .replace("#NOHP#", value.biodata.phone_number)
-            .replace("#LAB#", value.biodata.jabatan)
-            .replace("#HASIL#", value.location)
-            .replace("#JADWAK#", value.checkin)
-            .replace("#PENELITI#", value.biodata.hari_kerja)
+            .replace("#PHONE NUMBER#", value.biodata.phone_number)
+            .replace("#JABATAN#", value.biodata.jabatan)
+            .replace("#JADWAL PENELITIAN#", value.biodata.jadwalpenelitian)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);
